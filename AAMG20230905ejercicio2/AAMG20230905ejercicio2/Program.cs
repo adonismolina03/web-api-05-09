@@ -16,28 +16,41 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+var proveedores = new List<Proveedor>();
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/proveedores", () =>
 {
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateTime.Now.AddDays(index),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    return proveedores;
+});
+
+app.MapPost("/proveedores", (Proveedor proveedor) =>
+{
+    proveedores.Add(proveedor);
+    return Results.Ok();
+});
+
+app.MapDelete("/proveedores/{id}", (int id) =>
+{
+    var existingProveedor = proveedores.FirstOrDefault(a => a.Id == id);
+    if (existingProveedor != null)
+    {
+        proveedores.Remove(existingProveedor);
+        return Results.Ok();
+    }
+    else
+    {
+        return Results.NotFound();
+    }
+});
 
 app.Run();
 
-internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
+internal class Proveedor
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public int telephone { get; set; }
+
+
+
 }
