@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "+1FEyb4CDI5FZ7xlQCLY/hCAIp2pMB/GyMHtsfJ0WnWfh3+opDMZVxas4BAjVxLG98aMucGGXy0WZFWK4P9W3w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Adonis Molina\\Desktop\\Web API\\PrimeraAplicacionWebAPIConMininimalAPI\\PrimeraAplicacionWebAPIConMininimalAPI\\PrimeraAplicacionWebAPIConMininimalAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Adonis Molina\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Adonis Molina\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Adonis Molina\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Adonis Molina\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Adonis Molina\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Adonis Molina\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
